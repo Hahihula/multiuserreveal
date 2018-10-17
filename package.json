@@ -1,0 +1,13 @@
+{
+  "name": "multiuserReveal",
+  "version": "0.0.1",
+  "description": "RevealJs app for multiple users",
+  "main": "index.js",
+  "author": "hahihula@gmail.com",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "express": "^4.16.4",
+    "socket.io": "^2.1.1"
+  }
+}
