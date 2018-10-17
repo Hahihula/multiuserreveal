@@ -10,6 +10,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', function(req, res){
   res.sendFile(__dirname + '/presentation/index.html');
 });
+app.get('/master', function(req, res){
+  res.sendFile(__dirname + '/presentation/master.html');
+});
 
 var server = http.createServer(app).listen(3000, function(){
   console.log("Express server listening on port 3000");
