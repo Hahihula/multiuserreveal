@@ -131,10 +131,10 @@
 			// socket.on("message", function(data){
 			    // console.log(data);
 			// });
-			socket.on('slidechanged', function (data) {
-				// console.log(data);
-			    Reveal.slide(data.h, data.v, data.f);
-			  });
+			// socket.on('slidechanged', function (data) {
+			// 	// console.log(data);
+			//     Reveal.slide(data.h, data.v, data.f);
+			//   });
 			notifyServer = function(event){
 			    data = {
 			      v : Reveal.getIndices().v,
@@ -145,11 +145,11 @@
 			    // console.log('sendign slidechange');
 			  }
 
-			  // Reveal.addEventListener("slidechanged", notifyServer);
+			  Reveal.addEventListener("slidechanged", notifyServer);
 
-			  // Reveal.addEventListener("fragmentshown", notifyServer);
+			  Reveal.addEventListener("fragmentshown", notifyServer);
 
-			  // Reveal.addEventListener("fragmenthidden", notifyServer);
+			  Reveal.addEventListener("fragmenthidden", notifyServer);
 
 		</script>
 	</body>
